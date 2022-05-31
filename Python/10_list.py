@@ -268,18 +268,25 @@ for i in range(11):
 #실습 마무리
 #입력받은 10개의 점수를 sort() 해서 작은수부터 출력
 list = []
-for i in range(10):
+for i in range(5):
     val = int(input("정수 입력:"))
     list.append(val)
 
 #list = val.split(" ")
-list.sort()
-for i in range(10):
-    print(list[i],end=" ")
-print()
 
-for i in range(len(list)):
-    print("%d은 %d번 나왔습니다." %(list[i],list.count(list[i])))
-    i+=list.count(list[i])
-    break
+#데이터 정렬
+list.sort()
+print(list)
+
+cnt = []
+for i in list:
+    #1번 이상 중복되는 데이터를 뽑아서
+    if i not in cnt:
+        #새로운 리스트에 집어 넣고
+        cnt.append(i)
+#count를 이용해서 출력한다
+for i in range(len(cnt)):
+    print("%d는 %d번 나왔습니다." %(cnt[i], list.count(cnt[i])))
+
+
 #동일 점수 count
