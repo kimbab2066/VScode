@@ -69,3 +69,5 @@ elif C==A or C==B:
     print(1000+C*100)
 else:
     print(max(A,max(B,C))*100)
+#*_,a,b,c=sorted(input());print(['1'+b,c][a<b<c]+'000'[a<c:])
+#https://www.acmicpc.net/user/sait2000
