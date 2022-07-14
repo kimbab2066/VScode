@@ -64,3 +64,20 @@ print(' '.join(map(str, sb)))
 #4344 Above Average
 '''
 '''
+import sys
+input = sys.stdin.readline
+
+C = int(input())
+
+for _ in range(C):
+    data = input().strip().split(" ")
+    total = list(map(float,data[1:]))
+    avg = sum(total) / len(total)
+
+    cnt = 0
+    for i in total:
+        if(i>avg):
+            cnt+=1
+    result = cnt/len(total)*100
+    print(f'{result:.3f}%')
+    
