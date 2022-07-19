@@ -63,7 +63,6 @@ print(' '.join(map(str, sb)))
 '''
 #4344 Above Average
 '''
-'''
 import sys
 input = sys.stdin.readline
 
@@ -80,4 +79,4 @@ for _ in range(C):
             cnt+=1
     result = cnt/len(total)*100
     print(f'{result:.3f}%')
-    
+'''
